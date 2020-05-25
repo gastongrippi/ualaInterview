@@ -17,16 +17,14 @@ class MainCoordinator: CoordinatorProtocol {
 
     
     //MARK: CoordinatorProtocol
-    func firstViewController() {
+    func showMealsView() {
         let vc = MealsView()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func navigateToSecondViewController() {
-        // Implementar
-//        let vc = ViewController()
-//        vc.coordinator = self
-//        navigationController.pushViewController(vc, animated: false)
+    func navigateToMealDetail(mealName: String?, mealInstructions: String?) {
+        let vc = MealDetailView(mealName: mealName, instruction: mealInstructions)
+        navigationController.pushViewController(vc, animated: false)
     }
 }

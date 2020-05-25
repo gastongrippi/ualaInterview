@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navController = UINavigationController()
         coordinator = MainCoordinator(navigationController: navController)
-        coordinator?.firstViewController()
+        coordinator?.showMealsView()
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene

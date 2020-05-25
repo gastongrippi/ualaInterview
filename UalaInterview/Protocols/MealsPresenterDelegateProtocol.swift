@@ -11,7 +11,8 @@ import Foundation
 protocol MealsPresenterDelegateProtocol {
     func loadMeals(_ meals:String)
     func mealsQuantity() -> Int
-    func mealsCellTitleForRow(_ index: Int) -> String
+    func mealsCellNameForRow(_ index: Int) -> String
     func mealsCellCategoryForRow(_ index: Int) -> String
     func mealsCellImageForRow(_ index: Int) -> String
+    func mealInstructionsForRow(_ index: Int) -> String
 }

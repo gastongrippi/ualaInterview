@@ -10,23 +10,24 @@ import Foundation
 
 struct Meal: Codable {
     //MARK: Properties
-    var ID: String
     var name: String
     var category: String
     var imageURL: String
+    var instructions: String
+    
     
     enum CodingKeys: String, CodingKey {
-        case ID = "idMeal"
         case name = "strMeal"
         case category = "strCategory"
         case imageURL = "strMealThumb"
+        case instructions = "strInstructions"
     }
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        ID = try values.decode(String.self, forKey: .ID)
         name = try values.decode(String.self, forKey: .name)
         category = try values.decode(String.self, forKey: .category)
         imageURL = try values.decode(String.self, forKey: .imageURL)
+        instructions = try values.decode(String.self, forKey: .instructions)
     }
 }

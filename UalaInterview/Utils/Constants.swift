@@ -12,6 +12,7 @@ struct k {
     
     struct ScrenTitles {
         static let MealsListTitle = "Meals List"
+        static let MealsDetailView = "Meal Detail"
     }
     
     struct Constraints {

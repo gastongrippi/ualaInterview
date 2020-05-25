@@ -10,6 +10,6 @@ import UIKit
 
 protocol CoordinatorProtocol {
     var navigationController: UINavigationController { get set }
-    func firstViewController()
-    func navigateToSecondViewController()
+    func showMealsView()
+    func navigateToMealDetail(mealName: String?, mealInstructions: String?)
 }

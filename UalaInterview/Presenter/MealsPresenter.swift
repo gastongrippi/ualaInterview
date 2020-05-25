@@ -59,7 +59,7 @@ class MealsPresenter: MealsPresenterDelegateProtocol {
         return mealsArray.count
     }
     
-    func mealsCellTitleForRow(_ index: Int) -> String {
+    func mealsCellNameForRow(_ index: Int) -> String {
         return mealsArray[index].name
     }
     
@@ -69,5 +69,9 @@ class MealsPresenter: MealsPresenterDelegateProtocol {
     
     func mealsCellImageForRow(_ index: Int) -> String {
         return mealsArray[index].imageURL
+    }
+    
+    func mealInstructionsForRow(_ index: Int) -> String {
+        return mealsArray[index].instructions
     }
 }

@@ -11,7 +11,11 @@ import SDWebImage
 
 //MARK: UITableViewDelegate
 extension MealsView: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let mealName = presenterDelegate?.mealsCellNameForRow(indexPath.row)
+        let mealInstructions = presenterDelegate?.mealInstructionsForRow(indexPath.row)
+        coordinator?.navigateToMealDetail(mealName: mealName , mealInstructions: mealInstructions)
+    }
 }
 
 //MARK: UITableViewDataSource
@@ -22,7 +26,7 @@ extension MealsView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = MealCellView(style: .default, reuseIdentifier: k.identifiers.MealCell)
-        cell.mealName.text = presenterDelegate?.mealsCellTitleForRow(indexPath.row)
+        cell.mealName.text = presenterDelegate?.mealsCellNameForRow(indexPath.row)
         cell.mealCategory.text = presenterDelegate?.mealsCellCategoryForRow(indexPath.row)
     
         let imageURL = presenterDelegate?.mealsCellImageForRow(indexPath.row) ?? ""

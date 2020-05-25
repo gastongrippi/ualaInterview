@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B98A3F08-5F4C-42DA-BBC7-6E5B4D169DBB"
+            uuid = "664300FC-55A7-45E2-B4C6-74766D8670C0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UalaInterview/View/MealsView.swift"
+            filePath = "UalaInterview/Coordinator/MainCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "reloadMealsTableView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "835DEEED-CF2F-4106-B071-68C65DFA8429"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UalaInterview/View/MealsViewTableViewDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "navigateToMealDetail(mealName:mealInstructions:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
