@@ -12,6 +12,7 @@ class MealDetailView: UIViewController {
     //MARK: Properties
     var mealName = UILabel(frame: .zero)
     var instructions = UILabel(frame: .zero)
+    var scrollView = UIScrollView(frame: .zero)
     
     //MARK: Initializer
     convenience init(mealName: String?, instruction: String?) {
@@ -40,22 +41,26 @@ class MealDetailView: UIViewController {
     }
     
     private func addMealDetailConstraintsView() {
-        view.addSubview(mealName)
-        mealName.snp.makeConstraints { (make) in
-            make.top.equalTo(view.snp_top).offset(getNavigationBarHeight())
-            make.left.equalTo(view.snp_left)
-            make.right.equalTo(view.snp_right)
-            make.centerX.equalTo(view.snp_centerX)
-            make.height.equalTo(50)
+        view.addSubview(scrollView)
+        scrollView.snp.makeConstraints { (make) in
+            make.edges.equalTo(view.snp_edges)
         }
         
-        view.addSubview(instructions)
+        scrollView.addSubview(mealName)
+        mealName.snp.makeConstraints { (make) in
+            make.top.equalTo(scrollView.snp_top).offset(k.Constraints.generalPadding)
+            make.left.equalTo(scrollView.snp_left).offset(k.Constraints.generalPadding)
+            make.right.equalTo(scrollView.snp_right).offset(k.Constraints.generalPadding)
+            make.centerX.equalTo(scrollView.snp_centerX)
+        }
+        
+        scrollView.addSubview(instructions)
         instructions.snp.makeConstraints { (make) in
-            make.top.equalTo(mealName.snp_bottom).offset(10)
-            make.left.equalTo(view.snp_left)
-            make.right.equalTo(view.snp_right)
-            make.centerX.equalTo(view.snp_centerX)
-            make.bottom.greaterThanOrEqualTo(view.snp_bottom)
+            make.top.equalTo(mealName.snp_bottom).offset(k.Constraints.generalPadding)
+            make.left.equalTo(scrollView.snp_left).offset(k.Constraints.generalPadding)
+            make.right.equalTo(scrollView.snp_right).offset(k.Constraints.generalPadding)
+            make.centerX.equalTo(scrollView.snp_centerX)
+            make.bottom.greaterThanOrEqualTo(scrollView.snp_bottom).offset(-k.Constraints.generalPadding)
         }
     }
 }

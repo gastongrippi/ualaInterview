@@ -20,6 +20,7 @@ struct k {
         static let cellPadding = 10
         static let cellHeight = 50
         static let cellWidth = 50
+        static let generalPadding = 10
     }
     
     struct Fonts {
