@@ -7,5 +7,6 @@ target 'UalaInterview' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'Alamofire'
   pod 'SwiftyJSON', '~> 4.0'
-  
+  pod 'SDWebImage'
+
 end

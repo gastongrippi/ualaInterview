@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3D17F50C10A0BF6A1FF49194DA764689"
+               BlueprintIdentifier = "283F33BA7DA3211BA6D109EF36E0001F"
                BuildableName = "Pods_UalaInterview.framework"
                BlueprintName = "Pods-UalaInterview"
                ReferencedContainer = "container:Pods.xcodeproj">

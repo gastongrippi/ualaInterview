@@ -16,5 +16,18 @@ struct k {
     
     struct Constraints {
         static let searchBarHeight = 50
+        static let cellPadding = 10
+        static let cellHeight = 50
+        static let cellWidth = 50
     }
+    
+    struct Fonts {
+        static let TrebuchetMS = "TrebuchetMS"
+    }
+    
+    struct identifiers {
+        static let MealCell = "mealCell"
+        static let cellPlaceHolder = "placeholder"
+    }
+
 }

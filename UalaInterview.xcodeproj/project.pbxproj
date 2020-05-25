@@ -17,6 +17,7 @@
 		6A102047247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A102046247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift */; };
 		6A102049247C4A51008E12A3 /* MealsViewTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A102048247C4A51008E12A3 /* MealsViewTableViewDelegate.swift */; };
 		6A10204B247C4AE6008E12A3 /* MealsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A10204A247C4AE6008E12A3 /* MealsPresenter.swift */; };
+		6AE02001247C61F2007AFD81 /* MealCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE02000247C61F2007AFD81 /* MealCellView.swift */; };
 		6AE542FB247C190600789211 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE542FA247C190600789211 /* MainCoordinator.swift */; };
 		6AE542FD247C1BAC00789211 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE542FC247C1BAC00789211 /* CoordinatorProtocol.swift */; };
 		6AE54307247C20B200789211 /* MealsViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE54306247C20B200789211 /* MealsViewDelegateProtocol.swift */; };
@@ -38,6 +39,7 @@
 		6A102046247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewSearchBarDelegate.swift; sourceTree = "<group>"; };
 		6A102048247C4A51008E12A3 /* MealsViewTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewTableViewDelegate.swift; sourceTree = "<group>"; };
 		6A10204A247C4AE6008E12A3 /* MealsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsPresenter.swift; sourceTree = "<group>"; };
+		6AE02000247C61F2007AFD81 /* MealCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCellView.swift; sourceTree = "<group>"; };
 		6AE542FA247C190600789211 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		6AE542FC247C1BAC00789211 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		6AE54306247C20B200789211 /* MealsViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewDelegateProtocol.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				6A102042247C4399008E12A3 /* MealsView.swift */,
 				6A102046247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift */,
 				6A102048247C4A51008E12A3 /* MealsViewTableViewDelegate.swift */,
+				6AE02000247C61F2007AFD81 /* MealCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UalaInterview/Pods-UalaInterview-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -274,6 +278,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AE54309247C21C200789211 /* MealsPresenterDelegateProtocol.swift in Sources */,
+				6AE02001247C61F2007AFD81 /* MealCellView.swift in Sources */,
 				6A102043247C4399008E12A3 /* MealsView.swift in Sources */,
 				6A102041247C41C4008E12A3 /* Meal.swift in Sources */,
 				6A102047247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift in Sources */,

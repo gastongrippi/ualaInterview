@@ -13,11 +13,13 @@ struct Meal: Codable {
     var ID: String
     var name: String
     var category: String
+    var imageURL: String
     
     enum CodingKeys: String, CodingKey {
         case ID = "idMeal"
         case name = "strMeal"
         case category = "strCategory"
+        case imageURL = "strMealThumb"
     }
     
     init(from decoder: Decoder) throws {
@@ -25,5 +27,6 @@ struct Meal: Codable {
         ID = try values.decode(String.self, forKey: .ID)
         name = try values.decode(String.self, forKey: .name)
         category = try values.decode(String.self, forKey: .category)
+        imageURL = try values.decode(String.self, forKey: .imageURL)
     }
 }
