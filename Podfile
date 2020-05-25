@@ -5,5 +5,7 @@ target 'UalaInterview' do
 
   # Pods for UalaInterview
   pod 'SnapKit', '~> 4.0.0'
-
+  pod 'Alamofire'
+  pod 'SwiftyJSON', '~> 4.0'
+  
 end

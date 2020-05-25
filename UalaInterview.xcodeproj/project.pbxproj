@@ -14,11 +14,13 @@
 		6A102041247C41C4008E12A3 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A102040247C41C4008E12A3 /* Meal.swift */; };
 		6A102043247C4399008E12A3 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A102042247C4399008E12A3 /* MealsView.swift */; };
 		6A102045247C4754008E12A3 /* UIViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A102044247C4754008E12A3 /* UIViewControllerUtils.swift */; };
+		6A102047247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A102046247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift */; };
+		6A102049247C4A51008E12A3 /* MealsViewTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A102048247C4A51008E12A3 /* MealsViewTableViewDelegate.swift */; };
+		6A10204B247C4AE6008E12A3 /* MealsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A10204A247C4AE6008E12A3 /* MealsPresenter.swift */; };
 		6AE542FB247C190600789211 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE542FA247C190600789211 /* MainCoordinator.swift */; };
 		6AE542FD247C1BAC00789211 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE542FC247C1BAC00789211 /* CoordinatorProtocol.swift */; };
-		6AE54302247C1FFD00789211 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE54301247C1FFD00789211 /* Presenter.swift */; };
-		6AE54307247C20B200789211 /* ViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE54306247C20B200789211 /* ViewDelegateProtocol.swift */; };
-		6AE54309247C21C200789211 /* PresenterDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE54308247C21C200789211 /* PresenterDelegateProtocol.swift */; };
+		6AE54307247C20B200789211 /* MealsViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE54306247C20B200789211 /* MealsViewDelegateProtocol.swift */; };
+		6AE54309247C21C200789211 /* MealsPresenterDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE54308247C21C200789211 /* MealsPresenterDelegateProtocol.swift */; };
 		6AE5430C247C235400789211 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE5430B247C235400789211 /* Constants.swift */; };
 		6F6A563599E9F55F7B6A62BB /* Pods_UalaInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5964CFAFB35197DEB4D314 /* Pods_UalaInterview.framework */; };
 /* End PBXBuildFile section */
@@ -33,11 +35,13 @@
 		6A102040247C41C4008E12A3 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		6A102042247C4399008E12A3 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
 		6A102044247C4754008E12A3 /* UIViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUtils.swift; sourceTree = "<group>"; };
+		6A102046247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewSearchBarDelegate.swift; sourceTree = "<group>"; };
+		6A102048247C4A51008E12A3 /* MealsViewTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewTableViewDelegate.swift; sourceTree = "<group>"; };
+		6A10204A247C4AE6008E12A3 /* MealsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsPresenter.swift; sourceTree = "<group>"; };
 		6AE542FA247C190600789211 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		6AE542FC247C1BAC00789211 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		6AE54301247C1FFD00789211 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		6AE54306247C20B200789211 /* ViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDelegateProtocol.swift; sourceTree = "<group>"; };
-		6AE54308247C21C200789211 /* PresenterDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterDelegateProtocol.swift; sourceTree = "<group>"; };
+		6AE54306247C20B200789211 /* MealsViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewDelegateProtocol.swift; sourceTree = "<group>"; };
+		6AE54308247C21C200789211 /* MealsPresenterDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsPresenterDelegateProtocol.swift; sourceTree = "<group>"; };
 		6AE5430B247C235400789211 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0A0A82DD1FBC8287A547A24 /* Pods-UalaInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UalaInterview.debug.xcconfig"; path = "Target Support Files/Pods-UalaInterview/Pods-UalaInterview.debug.xcconfig"; sourceTree = "<group>"; };
 		AF5964CFAFB35197DEB4D314 /* Pods_UalaInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UalaInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +115,7 @@
 		6AE542FF247C1C8800789211 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				6AE54301247C1FFD00789211 /* Presenter.swift */,
+				6A10204A247C4AE6008E12A3 /* MealsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				6A102042247C4399008E12A3 /* MealsView.swift */,
+				6A102046247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift */,
+				6A102048247C4A51008E12A3 /* MealsViewTableViewDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				6AE542FC247C1BAC00789211 /* CoordinatorProtocol.swift */,
-				6AE54306247C20B200789211 /* ViewDelegateProtocol.swift */,
-				6AE54308247C21C200789211 /* PresenterDelegateProtocol.swift */,
+				6AE54306247C20B200789211 /* MealsViewDelegateProtocol.swift */,
+				6AE54308247C21C200789211 /* MealsPresenterDelegateProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -260,16 +266,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UalaInterview/Pods-UalaInterview-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -283,17 +289,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AE54302247C1FFD00789211 /* Presenter.swift in Sources */,
-				6AE54309247C21C200789211 /* PresenterDelegateProtocol.swift in Sources */,
+				6AE54309247C21C200789211 /* MealsPresenterDelegateProtocol.swift in Sources */,
 				6A102043247C4399008E12A3 /* MealsView.swift in Sources */,
 				6A102041247C41C4008E12A3 /* Meal.swift in Sources */,
+				6A102047247C4A23008E12A3 /* MealsViewSearchBarDelegate.swift in Sources */,
 				6AE542FB247C190600789211 /* MainCoordinator.swift in Sources */,
 				6AE5430C247C235400789211 /* Constants.swift in Sources */,
 				6AE542FD247C1BAC00789211 /* CoordinatorProtocol.swift in Sources */,
-				6AE54307247C20B200789211 /* ViewDelegateProtocol.swift in Sources */,
+				6A10204B247C4AE6008E12A3 /* MealsPresenter.swift in Sources */,
+				6AE54307247C20B200789211 /* MealsViewDelegateProtocol.swift in Sources */,
 				6A00A52F247C151A00E41626 /* AppDelegate.swift in Sources */,
 				6A102045247C4754008E12A3 /* UIViewControllerUtils.swift in Sources */,
 				6A00A531247C151A00E41626 /* SceneDelegate.swift in Sources */,
+				6A102049247C4A51008E12A3 /* MealsViewTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

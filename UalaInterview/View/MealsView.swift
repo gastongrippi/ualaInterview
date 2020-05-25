@@ -12,10 +12,10 @@ import SnapKit
 class MealsView: UIViewController {
     
     //MARK: Properties
-    weak var coordinator: MainCoordinator?
-    var presenter: PresenterDelegateProtocol?
     var mealsSearchBar = UISearchBar(frame: .zero)
     var mealsTableView = UITableView(frame: .zero)
+    weak var coordinator: MainCoordinator?
+    var presenterDelegate: MealsPresenterDelegateProtocol?
     
     //MARK: lifecycle
     override func viewDidLoad() {
@@ -29,7 +29,8 @@ class MealsView: UIViewController {
     private func setDelegates() {
         mealsSearchBar.delegate = self
         mealsTableView.delegate = self
-        mealsTableView.delegate = self
+        mealsTableView.dataSource = self
+        presenterDelegate = MealsPresenter(delegate: self)
     }
     
     private func addMealsConstraintsView() {
@@ -52,25 +53,10 @@ class MealsView: UIViewController {
 
 }
 
-//MARK: UISearchBarDelegate
-extension MealsView: UISearchBarDelegate {
-    
-}
-//MARK: UITableViewDelegate
-extension MealsView: UITableViewDelegate {
-    
+//Mark: MealsViewDelegateProtocol
+extension MealsView : MealsViewDelegateProtocol {
+    func reloadMealsTableView() {
+        mealsTableView.reloadData()
+    }
 }
 
-//MARK: UITableViewDataSource
-extension MealsView: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(frame: .zero)
-        return cell
-    }
-    
-    
-}
